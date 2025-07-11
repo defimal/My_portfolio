@@ -1,44 +1,91 @@
-# Student Portfolio Website
+# Defi Maleji Kapaba - Portfolio Website
 
-A simple, dark-mode-enabled personal portfolio site built from scratch for students and early-career developers.
+A clean, responsive portfolio website showcasing my projects and skills as a Computer Science student.
 
-## Features
-- Clean, modern, and responsive design
-- Dark mode by default with light mode toggle
-- Home, Experience, and Contact Me pages
-- Project showcase with links
-- Accessible, commented code
-- Built with HTML, CSS, JavaScript, and Bootstrap (layout only)
+## 🚀 Live Demo
 
-## Folder Structure
+[View Live Portfolio](https://defimal.github.io/portfolio/)
+
+## 📋 Features
+
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Dark/Light Mode Toggle** - User preference saved with localStorage
+- **Project Showcase** - Detailed project pages with descriptions
+- **Contact Form** - Integrated Google Forms for easy communication
+- **Modern UI** - Clean, professional design with smooth animations
+- **Accessible** - Semantic HTML and ARIA labels for screen readers
+
+## 🛠️ Technologies Used
+
+- **HTML5** - Semantic markup
+- **CSS3** - Custom properties, Flexbox, Grid
+- **JavaScript (ES6+)** - Vanilla JS for interactivity
+- **Bootstrap 5** - Grid system and components
+- **Google Forms** - Contact form integration
+
+## 📁 Project Structure
+
 ```
-/portfolio/
-├── index.html                # Home page
-├── /pages/
-│   ├── experience.html       # Projects/Experience page
-│   └── contact.html          # Contact form
-├── /css/
-│   └── styles.css            # All styling here
-├── /js/
-│   └── script.js             # Theme toggle, validation, etc.
-├── /img/
-│   └── profile.png           # Placeholder image
-├── /assets/                  # (optional: icons, backgrounds, fonts)
-├── /projects/                # (optional: local HTML demos)
-├── README.md                 # Project documentation
+portfolio/
+├── index.html              # Home page
+├── css/
+│   └── styles.css          # Main stylesheet
+├── js/
+│   └── script.js           # JavaScript functionality
+├── img/                    # Project images and assets
+├── pages/                  # Main pages
+│   ├── about.html          # About me page
+│   ├── projects.html       # Projects overview
+│   └── contact.html        # Contact page
+├── projects/               # Individual project details
+│   ├── secure-notes.html
+│   ├── personal-portfolio.html
+│   └── weather-dashboard.html
+└── assets/                 # Additional assets
+    └── resume.pdf
 ```
 
-## How to Run Locally
-1. Clone this repo or download the ZIP.
-2. Open `/portfolio/index.html` in your browser.
-3. Explore the site!
+## 🎯 Projects Featured
 
-## Screenshot
-*(Add a screenshot here if desired)*
+1. **Secure Notes App** - Web-based encrypted notes application
+2. **Personal Portfolio** - This very website
+3. **Weather Dashboard** - Real-time weather API integration
 
-## Contact
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+## 🔗 Links
+
+- **GitHub**: [@defimal](https://github.com/defimal)
+- **LinkedIn**: [defi-maleji](https://www.linkedin.com/in/defi-maleji/)
+- **Contact**: [Contact Form](https://docs.google.com/forms/d/e/1FAIpQLSc6WdhJinLwC9NvSmqfTlFcJGx6vXeajrERQwdNbRuPI5O-hw/viewform)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/defimal/portfolio.git
+   ```
+
+2. Open `index.html` in your browser or use a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+3. Visit `http://localhost:8000`
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for any improvements!
 
 ---
-© 2025 [Your Name] — Built with HTML, CSS, JS 
+
+**Built with ❤️ by Defi Maleji Kapaba** 
