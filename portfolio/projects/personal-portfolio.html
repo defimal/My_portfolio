@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio | Project Details</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="dark-mode">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact Me</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-outline-light" aria-label="Toggle dark/light mode">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <!-- Back to Projects Button -->
+    <a href="../pages/projects.html" class="btn btn-outline-secondary mb-4">
+      ← Back to Projects
+    </a>
+
+    <!-- Project Banner -->
+    <img src="../img/project2.png" alt="Personal Portfolio" class="project-banner">
+
+    <!-- Project Details -->
+    <div class="project-content">
+      <h1>Database-Backed Java Application</h1>
+      <p class="lead">A full-stack Java application developed as part of a University of Nebraska–Lincoln course project for a simulated construction company, featuring backend data management with a relational database.</p>
+    
+      <h3>About This Project</h3>
+      <p>This application was designed to manage internal company operations including employee records, project tracking, and material orders. It emphasized modular design, database integration, and iterative software delivery.</p>
+    
+      <h3>University Context</h3>
+      <p><strong>University of Nebraska–Lincoln | Spring 2025</strong></p>
+      <ul>
+        <li>Built a full-stack Java application for a simulated construction company, integrating a relational database for backend data management.</li>
+        <li>Delivered JAR files, technical design documents, test cases, and database schemas across iterative development phases.</li>
+        <li>Focused on clean, modular, and scalable code while applying best practices to minimize technical debt.</li>
+      </ul>
+    
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Relational database backend:</strong> MySQL or SQLite integration using JDBC</li>
+        <li><strong>Modular structure:</strong> Clean separation of logic (data access, business, UI)</li>
+        <li><strong>Data management:</strong> CRUD operations for projects, employees, and supplies</li>
+        <li><strong>Secure access:</strong> Basic login system with input validation</li>
+        <li><strong>Command-line interface:</strong> Interactive console input with structured menus</li>
+      </ul>
+    
+      <h3>Technologies Used</h3>
+      <div class="tech-list">
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">JDBC</span>
+        <span class="tech-badge">SQL</span>
+        <span class="tech-badge">MySQL / SQLite</span>
+        <span class="tech-badge">Object-Oriented Programming</span>
+        <span class="tech-badge">Command Line Interface</span>
+      </div>
+    
+      <h3>Design Philosophy</h3>
+      <p>The app prioritized modularity and maintainability, using OOP principles and design patterns. Each module was version-controlled and delivered iteratively with technical documentation and diagrams.</p>
+    
+      <h3>Security & Testing</h3>
+      <ul>
+        <li>Parameterized queries to prevent SQL injection</li>
+        <li>Basic input validation and error messaging</li>
+        <li>Comprehensive test cases for each functional module</li>
+        <li>Reviewed and refactored for maintainability between phases</li>
+      </ul>
+    
+      <h3>Future Enhancements</h3>
+      <ul>
+        <li>GUI front-end using JavaFX or web UI</li>
+        <li>Role-based access control for admin and employee accounts</li>
+        <li>Live database integration with deployment-ready schema</li>
+        <li>Unit testing with JUnit and integration testing with mock data</li>
+      </ul>
+    </div>
+    
+    <!-- GitHub Link -->
+    <div class="text-center mt-5">
+      <a href="https://github.com/defimal/student-portfolio" class="btn btn-accent btn-lg" target="_blank">
+        🔗 View Code on GitHub
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-3 mt-auto">
+    <div>
+      <a href="https://github.com/defimal" target="_blank" rel="noopener" class="footer-link">GitHub</a> |
+      <a href="https://www.linkedin.com/in/defi-maleji/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+    </div>
+    <div>Built by me – Student Portfolio Project</div>
+    <div>© 2025 Defi Maleji Kapaba — Built with HTML, CSS, JS</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html> 
