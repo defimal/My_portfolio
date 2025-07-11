@@ -1,0 +1,210 @@
+/* =============================
+   Student Portfolio Stylesheet
+   ============================= */
+
+:root {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #232323;
+  --accent: #4f8cff;
+  --footer-bg: #181818;
+  --input-bg: #232323;
+  --input-border: #333;
+  --transition: 0.3s;
+  --font-main: 'Inter', 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* Light mode overrides */
+body.light-mode {
+  --bg-color: #f7f7f7;
+  --text-color: #181818;
+  --card-bg: #fff;
+  --footer-bg: #eaeaea;
+  --input-bg: #fff;
+  --input-border: #ccc;
+}
+
+.container {
+  max-width: 800px;
+}
+
+/* Profile image: large, responsive rectangle, subtle shadow */
+.profile-img {
+  width: 100%;
+  margin-left: 0px;
+  max-width: 380px; /* Moderately large on desktop */
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid var(--accent);
+  background: var(--card-bg);
+  display: block;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px) {
+  .profile-img {
+    max-width: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .profile-img {
+    max-width: 120px;
+  }
+}
+
+/* Responsive layout tweaks for homepage main content */
+.main-flex {
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  .main-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vertical-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 1.5rem;
+    height: auto;
+    min-width: unset;
+    position: static;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-content-col {
+    width: 100%;
+  }
+  .profile-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.navbar, .footer {
+  transition: background var(--transition), color var(--transition);
+}
+
+.footer {
+  background: var(--footer-bg);
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.footer-link {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 0.25em;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  transition: background var(--transition);
+}
+.btn-accent:hover {
+  background: #2563eb;
+}
+
+input, textarea {
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 0.5em;
+  width: 100%;
+  transition: background var(--transition), color var(--transition), border var(--transition);
+}
+
+label {
+  margin-bottom: 0.25em;
+  font-weight: 500;
+}
+
+/* Hide default number input arrows */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Project card enhancements */
+.project-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--input-border);
+}
+
+.project-title-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.project-title-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Project detail page styles */
+.project-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--input-border);
+}
+
+.project-content {
+  line-height: 1.6;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-badge {
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+} 
