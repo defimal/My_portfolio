@@ -7,117 +7,8 @@
   <!-- Bootstrap CSS (Grid/Layout only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <style>
-    .main-flex {
-      min-height: 90vh;
-      display: flex;
-      flex-direction: row;
-    }
-    @media (max-width: 900px) {
-      .main-flex {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    .main-content-col {
-      padding-left: 0 !important;
-      margin-left: 0 !important;
-    }
-    .profile-img-wrapper {
-      padding-left: 0 !important;
-      margin-left: 0 !important;
-      display: flex;
-      align-items: center;
-      gap: 3rem; /* Increased gap for more space */
-      flex-direction: row;
-    }
-    .intro-text-col {
-      padding-left: 2rem;
-      flex-grow: 1;
-    }
-    @media (max-width: 1100px) {
-      .profile-img-wrapper {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: flex-start;
-      }
-      .intro-text-col {
-        padding-left: 0;
-        width: 100%;
-      }
-    }
-    /* Vertical nav styles */
-    .vertical-nav {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem 1rem 2rem 2rem;
-      background: var(--card-bg);
-      border-radius: 16px 0 0 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      min-width: 160px;
-    }
-    .vertical-nav .nav-link {
-      color: var(--text-color);
-      font-size: 1.1rem;
-      padding: 0.5rem 0.75rem;
-      border-radius: 6px;
-      text-align: right;
-      transition: background 0.2s, color 0.2s;
-    }
-    .vertical-nav .nav-link.active,
-    .vertical-nav .nav-link:hover {
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-    }
-    .vertical-nav .theme-toggle-btn {
-      margin-top: 1.5rem;
-      align-self: flex-end;
-    }
-    @media (max-width: 900px) {
-      .vertical-nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        height: auto;
-        width: 100%;
-        min-width: unset;
-        border-radius: 0 0 16px 16px;
-        padding: 0.5rem 1rem;
-        position: static;
-        box-shadow: none;
-        margin-bottom: 2rem;
-      }
-      .vertical-nav .nav-link {
-        text-align: center;
-        font-size: 1rem;
-        padding: 0.5rem 0.75rem;
-      }
-      .vertical-nav .theme-toggle-btn {
-        margin-top: 0;
-        margin-left: 1rem;
-      }
-    }
-    @media (max-width: 600px) {
-      .main-content-col {
-        width: 100%;
-      }
-      .vertical-nav {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 0 16px 16px;
-        margin-bottom: 1.5rem;
-      }
-    }
-  </style>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dark-mode">
   <div class="d-flex main-flex ps-0">
@@ -132,11 +23,32 @@
             <p class="lead">I'm passionate about data science and cybersecurity, and I enjoy building software that's both smart and secure.</p>
           </div>
         </div>
+        
+        <!-- Mobile Bottom Navigation Bar -->
+        <div class="mobile-bottom-nav">
+          <div class="mobile-nav-container">
+            <a href="index.html" class="mobile-nav-item active" aria-label="Home">
+              <i class="fas fa-home"></i>
+            </a>
+            <a href="pages/about.html" class="mobile-nav-item" aria-label="About Me">
+              <i class="fas fa-user"></i>
+            </a>
+            <a href="pages/projects.html" class="mobile-nav-item" aria-label="Projects">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="pages/contact.html" class="mobile-nav-item" aria-label="Contact Me">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <button id="mobile-theme-toggle" class="mobile-nav-item theme-toggle-btn" aria-label="Toggle dark/light mode">
+              <i class="fas fa-moon" id="mobile-theme-icon"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Right: Vertical Navigation -->
+    <!-- Right: Vertical Navigation (Desktop Only) -->
     <nav class="vertical-nav d-flex flex-column align-items-end justify-content-center ms-auto">
-      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="index.html">Home</a>
       <a class="nav-link" href="pages/about.html">About Me</a>
       <a class="nav-link" href="pages/projects.html">Projects</a>
       <a class="nav-link" href="pages/contact.html">Contact Me</a>
