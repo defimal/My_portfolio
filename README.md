@@ -34,7 +34,7 @@ portfolio/
 │   └── script.js           # JavaScript functionality
 ├── img/                    # Project images and assets
 ├── pages/                  # Main pages
-│   ├── about.html          # About me page
+│   ├── about.html          # Experience page
 │   ├── projects.html       # Projects overview
 │   └── contact.html        # Contact page
 ├── projects/               # Individual project details

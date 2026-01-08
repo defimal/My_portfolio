@@ -4,70 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS (Grid/Layout only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="dark-mode">
-  <div class="d-flex main-flex ps-0">
-    <!-- Left: Main Content -->
-    <div class="flex-grow-1 d-flex align-items-center justify-content-center main-content-col">
-      <div class="w-100" style="max-width: 900px;">
-        <div class="d-flex align-items-center mb-4 profile-img-wrapper">
-          <img src="img/profile.png" alt="Profile" class="profile-img img-fluid d-block mx-0" style="object-fit:cover;">
-          <div class="intro-text-col text-md-start text-center flex-grow-1">
-            <h1>Hi, I'm Defi Maleji Kapaba</h1>
-            <h3 class="mb-3">Computer Science Student</h3>
-            <p class="lead">I'm passionate about data science and cybersecurity, and I enjoy building software that's both smart and secure.</p>
+<body class="dark-mode home-page">
+  <div class="home-shell">
+    <header class="home-header">
+      <a class="home-brand" href="index.html">Defi.</a>
+      <nav class="home-nav" aria-label="Primary">
+        <a class="home-link active" href="index.html">Home</a>
+        <a class="home-link" href="pages/about.html">Experience</a>
+        <a class="home-link" href="pages/projects.html">Projects</a>
+        <a class="home-link" href="pages/photography.html">Photography</a>
+        <a class="home-link" href="pages/contact.html">Contact</a>
+        <button id="theme-toggle" class="home-theme-toggle" aria-label="Toggle dark/light mode">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="home-main">
+      <section class="home-hero">
+        <h1 class="home-title">Hi, I'm Defi <span class="home-wave" aria-hidden="true">👋</span></h1>
+        <p class="home-subtitle">Computer Science student focused on data science. I like building software that feels simple, solid, and actually useful.</p>
+      </section>
+
+      <section class="home-now">
+        <h2 class="home-section-title">Currently</h2>
+        <div class="home-now-grid">
+          <div class="home-now-block">
+            <h3>Reading</h3>
+            <ul>
+              <li>Martin Kleppmann</li>
+            </ul>
+          </div>
+          <div class="home-now-block">
+            <h3>Building</h3>
+            <p>Personal projects that mirror production environments rather than coursework demos.</p>
+          </div>
+          <div class="home-now-block">
+            <h3>Interested in</h3>
+            <p>Distributed systems fundamentals, backend architecture, and secure system design.</p>
+          </div>
+          <div class="home-now-block">
+            <h3>Working on</h3>
+            <p>Staying consistent with training and health while managing demanding coursework and projects.</p>
           </div>
         </div>
-        
-        <!-- Mobile Bottom Navigation Bar -->
-        <div class="mobile-bottom-nav">
-          <div class="mobile-nav-container">
-            <a href="index.html" class="mobile-nav-item active" aria-label="Home">
-              <i class="fas fa-home"></i>
-            </a>
-            <a href="pages/about.html" class="mobile-nav-item" aria-label="About Me">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="pages/projects.html" class="mobile-nav-item" aria-label="Projects">
-              <i class="fas fa-code"></i>
-            </a>
-            <a href="pages/contact.html" class="mobile-nav-item" aria-label="Contact Me">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <button id="mobile-theme-toggle" class="mobile-nav-item theme-toggle-btn" aria-label="Toggle dark/light mode">
-              <i class="fas fa-moon" id="mobile-theme-icon"></i>
-            </button>
-          </div>
-        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <div class="home-footer-links">
+        <a href="https://github.com/defimal" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/defi-maleji/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:dkapaba2@huskers.unl.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="assets/resume.pdf" class="home-footer-text" download>Resume</a>
       </div>
-    </div>
-    <!-- Right: Vertical Navigation (Desktop Only) -->
-    <nav class="vertical-nav d-flex flex-column align-items-end justify-content-center ms-auto">
-      <a class="nav-link active" href="index.html">Home</a>
-      <a class="nav-link" href="pages/about.html">About Me</a>
-      <a class="nav-link" href="pages/projects.html">Projects</a>
-      <a class="nav-link" href="pages/contact.html">Contact Me</a>
-      <button id="theme-toggle" class="btn btn-outline-light theme-toggle-btn" aria-label="Toggle dark/light mode">
-        <span id="theme-icon">🌙</span>
-      </button>
-    </nav>
+      <div class="home-footer-meta">© 2025 Defi Maleji Kapaba — Built with HTML, CSS, JS</div>
+    </footer>
   </div>
-  <!-- Footer -->
-  <footer class="footer bg-dark text-light text-center py-3 mt-auto">
-    <div>
-      <a href="https://github.com/defimal" target="_blank" rel="noopener" class="footer-link">GitHub</a> |
-      <a href="https://www.linkedin.com/in/defi-maleji/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
-    </div>
-    <div>Built by me – Student Portfolio Project</div>
-    <div>© 2025 Defi Maleji Kapaba — Built with HTML, CSS, JS</div>
-  </footer>
   <!-- Bootstrap JS (for grid/flex) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-</html> 
+</html>

@@ -26,6 +26,10 @@ function setTheme(mode) {
 // Load theme preference on page load
 function loadTheme() {
   const saved = localStorage.getItem('theme');
+  if (!saved && (body.classList.contains('home-page') || body.classList.contains('experience-page') || body.classList.contains('projects-page') || body.classList.contains('contact-page') || body.classList.contains('photography-page'))) {
+    setTheme('light');
+    return;
+  }
   setTheme(saved === 'light' ? 'light' : 'dark');
 }
 
