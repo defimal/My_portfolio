@@ -4,7 +4,7 @@ A clean, responsive portfolio website showcasing my projects and skills as a Com
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://https://defimal.github.io/My_portfolio/index.html)
+[View Live Portfolio](https://defimal.github.io/My_portfolio/index.html)
 
 ## 📋 Features
 
